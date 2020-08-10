@@ -1,0 +1,144 @@
+{
+  "users": [
+    {
+      "id": "greenfrog467",
+      "firstName": "Rafael",
+      "lastName": "Numan",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/20.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": "organicpeacock788",
+      "firstName": "Johanna",
+      "lastName": "Noel",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/81.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": "beautifulwolf487",
+      "firstName": "Lorenzo",
+      "lastName": "Adam",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/68.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": "bluewolf576",
+      "firstName": "Özsu",
+      "lastName": "Limoncuoğlu",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/2.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": "bluegoose574",
+      "firstName": "Dwayne",
+      "lastName": "Carlson",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/65.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": "sadfrog767",
+      "firstName": "Larry",
+      "lastName": "Black",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/54.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": "biggorilla646",
+      "firstName": "Mirko",
+      "lastName": "Gautier",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/8.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": "bluezebra234",
+      "firstName": "Hortênsia",
+      "lastName": "Santos",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/81.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": "tinylion649",
+      "firstName": "Miro",
+      "lastName": "Ahonen",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/86.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": "angryladybug338",
+      "firstName": "Evelyn",
+      "lastName": "Lee",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/49.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": "organicmouse915",
+      "firstName": "Brandie",
+      "lastName": "Carroll",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/54.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": "brownswan156",
+      "firstName": "Vivienne",
+      "lastName": "Arnaud",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/64.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": "whiteostrich326",
+      "firstName": "Friedhold",
+      "lastName": "Wollny",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/31.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": "sadsnake269",
+      "firstName": "Lewis",
+      "lastName": "Newman",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/88.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": "redgoose424",
+      "firstName": "Melinda",
+      "lastName": "Bergheim",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/83.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": "goldenrabbit332",
+      "firstName": "Auguste",
+      "lastName": "Mathieu",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/45.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": "blackmeercat777",
+      "firstName": "Aaliyah",
+      "lastName": "Chen",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/36.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": "blackmouse690",
+      "firstName": "Jacob",
+      "lastName": "Lowe",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/29.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": "happyfish819",
+      "firstName": "Nellie",
+      "lastName": "Meyer",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/38.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": "goldenfrog992",
+      "firstName": "Rasmus",
+      "lastName": "Rajala",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/27.jpg",
+      "isFavorite": false
+    }
+  ]
+}

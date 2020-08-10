@@ -7,9 +7,23 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json-server": "json-server --watch data/db.json --delay 5000 --port 4000"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.6",
+    "tailwindcss": "^1.6.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "fs": "0.0.1-security",
+    "json-server": "^0.16.1",
+    "next": "^9.5.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
