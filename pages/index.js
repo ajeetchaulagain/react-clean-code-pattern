@@ -1,7 +1,7 @@
 import Layout from "../src/components/Layout";
 import AuthorsSection from "../src/components/AuthorsSection";
 
-const index = () => {
+const IndexPage = () => {
   return (
     <Layout>
       <AuthorsSection />
@@ -9,4 +9,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default IndexPage;

@@ -131,7 +131,7 @@
       "firstName": "Nellie",
       "lastName": "Meyer",
       "profileImageUrl": "https://randomuser.me/api/portraits/women/38.jpg",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "id": "goldenfrog992",
