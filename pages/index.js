@@ -1,6 +1,5 @@
-import Layout from "../components/Layout";
-import AuthorsSection from "../components/AuthorsSection";
-import LoginForm from "../components/LoginForm";
+import Layout from "../src/components/Layout";
+import AuthorsSection from "../src/components/AuthorsSection";
 
 const index = () => {
   return (

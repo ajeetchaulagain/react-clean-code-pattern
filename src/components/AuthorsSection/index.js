@@ -1,51 +1,24 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, { useState, useEffect, useReducer, useContext } from "react";
 import AuthorSearchBar from "./AuthorSearchBar";
 import Author from "./Author";
-import axios from "axios";
 import Spinner from "../shared/Spinner";
-import requestReducer, { REQUEST_STATUS } from "../../reducers/request";
+import { REQUEST_STATUS } from "../../reducers/request";
+import { DataContext, DataProvider } from "../../contexts/DataContexts";
 
-import {
-  GET_ALL_SUCCESS,
-  GET_ALL_FAILURE,
-  PUT_FAILURE,
-  PUT_SUCCESS,
-} from "../../actions/request";
-
-const AuthorsSection = () => {
+const AuthorsSectionComponent = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [{ records: authors, status, error }, dispatch] = useReducer(
-    requestReducer,
-    {
-      status: REQUEST_STATUS.LOADING,
-      records: [],
-      error: null,
-    }
-  );
 
-  console.log("authors", authors);
+  const { records: authors, status, error, put } = useContext(DataContext);
 
   const onFavoriteToggleHandler = async (authorToToggle) => {
+    put({
+      ...authorToToggle,
+      isFavorite: !authorToToggle.isFavorite,
+    });
     const toggledAuthor = {
       ...authorToToggle,
       isFavorite: !authorToToggle.isFavorite,
     };
-    try {
-      await axios.put(
-        `http://localhost:4000/users/${toggledAuthor.id}`,
-        toggledAuthor
-      );
-
-      dispatch({
-        type: PUT_SUCCESS,
-        record: toggledAuthor,
-      });
-    } catch (e) {
-      dispatch({
-        type: PUT_FAILURE,
-        error: e,
-      });
-    }
   };
 
   const mapAPIDataToView = (authors) => {
@@ -59,26 +32,6 @@ const AuthorsSection = () => {
       };
     });
   };
-
-  useEffect(() => {
-    console.log("Use Effec Hook");
-    const fetchData = async () => {
-      try {
-        const { data } = await axios.get(`http://localhost:4000/users`);
-        dispatch({
-          type: GET_ALL_SUCCESS,
-          records: data,
-        });
-      } catch (err) {
-        dispatch({
-          type: GET_ALL_FAILURE,
-          status: REQUEST_STATUS.ERROR,
-          error: err,
-        });
-      }
-    };
-    fetchData();
-  }, []);
 
   const isSuccess = status === REQUEST_STATUS.SUCCESS;
   const isLoading = status === REQUEST_STATUS.LOADING;
@@ -128,4 +81,12 @@ const AuthorsSection = () => {
   );
 };
 
-export default AuthorsSection;
+const AuthorSection = (props) => {
+  return (
+    <DataProvider baseUrl="http://localhost:4000" routeName="users">
+      <AuthorsSectionComponent {...props}></AuthorsSectionComponent>
+    </DataProvider>
+  );
+};
+
+export default AuthorSection;

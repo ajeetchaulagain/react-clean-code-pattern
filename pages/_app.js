@@ -1,5 +1,5 @@
-import "../styles/styles.css";
-import "../styles/Spinner.css";
+import "../src/styles/styles.css";
+import "../src/styles/Spinner.css";
 
 function App({ Component, pageProps }) {
   return <Component {...pageProps} />;
