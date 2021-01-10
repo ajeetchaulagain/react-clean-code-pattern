@@ -1,4 +1,4 @@
-# react-better-data-management
+# react-clean-code-pattern
 
 I have created this project to demonstrate how a data/state in react components can be managed in a clean, maintainable way using the React Context API combined with custom hooks.
 
