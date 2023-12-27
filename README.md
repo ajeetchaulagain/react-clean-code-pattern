@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/a6d60674d4ba845424cb/maintainability)](https://codeclimate.com/github/ajeetchaulagain/react-clean-code-pattern/maintainability)
+
 # react-clean-code-pattern
 
 I have created this project to demonstrate how a data/state in react components can be managed in a clean, maintainable way using the React Context API combined with custom hooks.
